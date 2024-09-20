@@ -1,0 +1,349 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0f0f2d;
+    margin: 0;
+    padding: 0;
+} 
+
+.full-body{
+    margin: 50px;
+    height: 500px;
+}
+
+.navbar {
+    background-color: goldenrod;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+a span{
+    color: black;
+    font-weight: 900;
+    text-shadow:
+    2px 2px 0 rgba(255, 255, 255, 1),
+    -2px -2px 0 rgba(255, 255, 255, 1),
+    2px -2px 0 rgba(255, 255, 255, 1),
+    -2px 2px 0 rgba(255, 255, 255, 1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #656363;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+.body{
+    margin-top: 120px;
+    padding: 60px ;
+    margin-left: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px; 
+    height: 500px;
+    flex-direction: column;
+}
+h2{
+    padding-left: 15px;
+    color: #fff;
+    width: 600px; 
+    height: 500px;
+    font-size: 3.5rem;
+    font-family:  sans-serif;
+    font-weight: bold;
+ 
+}
+
+.p{
+     font-style: Arial;
+     font-size: 25px;
+     font-weight: 5;
+     color: #d1c0c0;
+}
+.p span{
+    color : goldenrod;
+    font-weight: bold;
+}
+
+.ig{
+    border-radius: 50% ;
+    box-shadow: 0 0 0  goldenrod; 
+}
+
+.ig img{
+    padding: 40px;
+    position: absolute;
+    right: 140px; /* Aligns the box to the right side */
+    top: 50%; /* Vertically centers the box */
+    transform: translateY(-50%); /*center */
+    border-radius: 50%;
+    height: 500px;
+    width: 350px;
+}
+
+.ig img:hover{
+    border: 2px solid #f8c291;
+    box-shadow: 0 0 25px 000000,
+    0 0 25px #000000,
+    0 0 25px #000000; 
+}
+.about-section{
+    height: 700px;
+    background-color: #0f0f2d;
+}
+
+.abo:hover{
+    font-weight: 800;
+    text-decoration: underline;
+    transform: translateY(-10px);
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 70px;
+    background-color: #0f0f2d;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+.about-container h1 {
+    text-align: center;
+    color: goldenrod; /* Gold color for the heading */
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-container .content p {
+    color: #d1c0c0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    background-color: #0f0f2d;
+}
+
+.about-container .content p:first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: goldenrod; /* Gold initial letter */
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+.about-container .content {
+
+    border-left: 4px solid goldenrod; /* Gold border */
+    padding-left: 15px;
+}
+
+/* Hover effect on paragraphs */
+.about-container .content p:hover {
+    background-color: #534c4c; /* Slightly lighter background on hover */
+    border-radius: 5px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#projects {
+    /* padding: 50px 0; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 600px;
+}
+
+.pro{
+    padding: 40px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    color: goldenrod; /* Gold color for the heading */
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.pro:hover{
+    font-weight: 800;
+    text-decoration: underline;
+    transform: translateY(-10px);
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #0f0f2d;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.project-card a {
+    color: goldenrod;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.skills {
+    padding: 50px ;
+    text-align: center;
+    background-color:  #0f0f2d; 
+} 
+
+.skill{
+    width: 100%;
+    height: 100px;
+    padding-bottom: 0px;
+    text-align: center;
+    color: goldenrod; /* Gold color for the heading */
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.skill:hover{
+    font-weight: 800;
+    text-decoration: underline;
+    transform: translateY(-10px);
+}
+
+.skills-container {
+    padding-top: 0px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill-box {
+    background-color: #0f0f2d; 
+    color: #f0f0f0; /* White */
+    border: 2px solid #f8c291; /* Gold Border */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.skill-box p {
+    font-size: 1rem;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
